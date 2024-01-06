@@ -19,10 +19,12 @@ type Instance struct {
 	datasetID string
 }
 
+// ProjectID returns the project id of the underlying instance.
 func (r *Instance) ProjectID() string {
 	return r.projectID
 }
 
+// DatasetID returns the dataset id of the underlying instance.
 func (r *Instance) DatasetID() string {
 	return r.datasetID
 }
