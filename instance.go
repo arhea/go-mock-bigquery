@@ -41,7 +41,7 @@ func (r *Instance) Close(ctx context.Context) {
 	r.t.Helper()
 
 	if err := r.container.Terminate(ctx); err != nil {
-		r.t.Logf("error terminating redis emulator: %v", err)
+		r.t.Logf("error terminating bigquery emulator: %v", err)
 	}
 }
 
