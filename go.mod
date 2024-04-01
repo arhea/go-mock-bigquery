@@ -8,7 +8,7 @@ require (
 	github.com/docker/go-connections v0.5.0
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.29.1
-	google.golang.org/api v0.171.0
+	google.golang.org/api v0.172.0
 )
 
 require (
