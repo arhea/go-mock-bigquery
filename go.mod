@@ -3,7 +3,7 @@ module github.com/arhea/go-mock-bigquery
 go 1.21.5
 
 require (
-	cloud.google.com/go/bigquery v1.59.1
+	cloud.google.com/go/bigquery v1.60.0
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/docker/go-connections v0.5.0
 	github.com/stretchr/testify v1.9.0
