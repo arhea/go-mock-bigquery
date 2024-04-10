@@ -61,8 +61,9 @@ func NewInstance(ctx context.Context, t *testing.T, project string, dataset stri
 	operation := backoff.OperationWithData[testcontainers.Container](func() (testcontainers.Container, error) {
 		return testcontainers.GenericContainer(ctx, testcontainers.GenericContainerRequest{
 			ContainerRequest: testcontainers.ContainerRequest{
-				ImagePlatform: "linux/amd64",
-				Image:         "ghcr.io/goccy/bigquery-emulator:latest",
+				AlwaysPullImage: true,
+				ImagePlatform:   "linux/amd64",
+				Image:           "ghcr.io/goccy/bigquery-emulator:latest",
 				Cmd: []string{
 					"--project=" + project,
 					"--dataset=" + dataset,
